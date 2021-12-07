@@ -1,0 +1,27 @@
+<h1>Lista użytkowników</h1>
+
+<table id="users">
+    <thead>
+        <tr>
+            <th>Index</th>
+            <th>Imię</th>
+            <th>Nazwisko</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    {{#each users}}
+        <tr>
+            <td>{{this.index}}</td>
+            <td>{{this.name}}</td>
+            <td>{{this.lastName}}</td>
+            <td>
+                <button onclick="window.location='/edit/{{this._id}}'">Edytuj</button>
+                <button onclick="window.location='/users/delete/{{this._id}}'">Usuń</button>
+            </td>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>
+<br>
+<button onclick="window.location='/create'">Dodaj</button>

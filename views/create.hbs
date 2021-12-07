@@ -1,0 +1,16 @@
+<h1>Dodanie nowego użytkownika</h1>
+
+
+<form method="post" action="/users/create">
+    <input type="text" name="name" placeholder="Imię" required>
+    <br>
+    <br>
+    <input type="text" name="lastName" placeholder="Nazwisko" required>
+    <br>
+    <br>
+    <input type="text" name="index" placeholder="Index" required minlength="6" maxlength="6">
+    <br>
+    <br>
+    <button type="submit">Dodaj</button>
+    <button type="button" onclick="window.location='/'">Wstecz</button>
+</form>

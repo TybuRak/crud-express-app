@@ -1,0 +1,17 @@
+<h1>Edytowanie użytkownika {{user.index}} {{user.name}} {{user.lastName}}</h1>
+
+
+<form method="POST" action="/users/{{user._id}}">
+    <input type="text" name="name" placeholder="Imię" value="{{user.name}}" required>
+    <br>
+    <br>
+    <input type="text" name="lastName" placeholder="Nazwisko" value="{{user.lastName}}" required>
+    <br>
+    <br>
+    <input type="text" name="index" placeholder="Index" value="{{user.index}}" required minlength="6" maxlength="6">
+    <br>
+    <br>
+    <button type="submit">Edytuj</button>
+    <button type="button" onclick="window.location='/'">Wstecz</button>
+    <button type="button" onclick="window.location='/users/delete/{{user._id}}'">Usuń</button>
+</form>
