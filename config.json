@@ -1,0 +1,4 @@
+{
+  "mongourl": "mongodb+srv://admin:1234@zawadzkicom.5l86h.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "dbName": "ZawadzkiCOM"
+}
